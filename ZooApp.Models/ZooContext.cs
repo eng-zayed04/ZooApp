@@ -9,5 +9,10 @@ namespace ZooApp.Models
 {
     public class ZooContext : DbContext
     {
+        public ZooContext() : base("ZooContext")
+        {
+        }
+
+        public DbSet<Animal> Animals { get; set; }
     }
 }

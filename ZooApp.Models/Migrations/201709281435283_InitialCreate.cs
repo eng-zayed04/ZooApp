@@ -7,11 +7,6 @@ namespace ZooApp.Models.Migrations
     {
         public override void Up()
         {
-            DropTable("dbo.Animals");
-        }
-        
-        public override void Down()
-        {
             CreateTable(
                 "dbo.Animals",
                 c => new
@@ -24,6 +19,11 @@ namespace ZooApp.Models.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
+        }
+        
+        public override void Down()
+        {
+            DropTable("dbo.Animals");
         }
     }
 }
