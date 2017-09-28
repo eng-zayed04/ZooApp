@@ -13,7 +13,7 @@ namespace ZooApp.Models.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201709270034291_InitialCreate"; }
+            get { return "201709281405323_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source
